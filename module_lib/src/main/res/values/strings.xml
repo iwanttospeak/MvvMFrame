@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">moduleLib</string>
+
+    <string name="message_http_error">服务器异常，请稍后再试</string>
+    <string name="message_http_no_net">无法访问到网络,请检查网络设置</string>
+
+    <!--选择图片-->
+    <string name="choose_pic_from_camera">拍照</string>
+    <string name="choose_pic_from_gallery">从相册选择</string>
+    <string name="choose_pic_cancel">取消</string>
+</resources>

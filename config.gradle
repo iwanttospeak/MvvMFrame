@@ -1,0 +1,53 @@
+ext {
+    debug = false
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "27.0.3",
+            minSdkVersion    : 15,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0",
+    ]
+
+    compileOptions = [
+            sourceCompatibility: 1.8,
+            targetCompatibility: 1.8
+    ]
+
+    dependencies = [
+            constraint           : 'com.android.support.constraint:constraint-layout:1.1.0-beta5',
+            appcompatV7          : 'com.android.support:appcompat-v7:27.0.2',
+            supportV4            : 'com.android.support:support-v4:27.0.2',
+            design               : 'com.android.support:design:27.0.2',
+            cardView             : 'com.android.support:cardview-v7:27.0.2',
+            recyclerview         : 'com.android.support:recyclerview-v7:27.0.2',
+            multidex             : 'com.android.support:multidex:1.0.1',//分包
+            retrofit             : 'com.squareup.retrofit2:retrofit:2.3.0',// https://github.com/square/retrofit
+            rxandroid            : 'io.reactivex.rxjava2:rxandroid:2.0.2', // https://github.com/ReactiveX/RxAndroid
+            gson                 : 'com.google.code.gson:gson:2.8.2', //https://github.com/google/gson/
+            converterGson        : 'com.squareup.retrofit2:converter-gson:2.3.0', //https://github.com/square/retrofit/tree/master/retrofit-converters/gson
+            adapterRxjava        : 'com.squareup.retrofit2:adapter-rxjava2:2.3.0',//https://github.com/square/retrofit/tree/master/retrofit-adapters/rxjava2
+            stateview            : 'com.github.nukc.stateview:library:1.3.4',    //状态view github:https://github.com/nukc/StateView
+            transitionseverywhere: 'com.andkulikov:transitionseverywhere:1.7.8',    //view内转场动画 github:https://github.com/andkulikov/Transitions-Everywhere
+            barlibrary           : 'com.gyf.barlibrary:barlibrary:2.3.0', //状态栏 github:https://github.com/gyf-dev/ImmersionBar
+            permission           : 'com.yanzhenjie:permission:1.1.2', //权限申请 github:https://github.com/yanzhenjie/AndPermission
+            util_code            : 'com.blankj:utilcode:1.12.6', //基础代码 github:https://github.com/Blankj/AndroidUtilCode
+            banner               : 'com.youth.banner:banner:1.4.10', //轮播图 github:https://github.com/youth5201314/banner
+            choosePic            : 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.9', //选择图片 github:https://github.com/LuckSiege/PictureSelector
+            pickerView           : 'com.contrarywind:Android-PickerView:3.2.7',//仿ios滚轮 github:https://github.com/Bigkoo/Android-PickerView
+            refresh              : 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1',//刷新 github:https://github.com/scwang90/SmartRefreshLayout
+            router               : 'com.alibaba:arouter-api:1.3.1',//路由 github:https://github.com/alibaba/ARouter
+            router_compiler      : 'com.alibaba:arouter-compiler:1.1.4',//路由apt  github:https://github.com/alibaba/ARouter
+            logger               : 'com.orhanobut:logger:2.1.1',//日记 github:https://github.com/orhanobut/logger
+            hawk                 : 'com.orhanobut:hawk:2.0.1',//键值对存储 gitHub:https://github.com/orhanobut/hawk
+            flow                 : 'com.zhy:flowlayout-lib:1.0.3',//流式布局
+            circle_pic           : 'de.hdodenhof:circleimageview:2.2.0',//圆形图片
+            loading              : 'com.wang.avi:library:2.1.3',//loading动画 github:https://github.com/81813780/AVLoadingIndicatorView
+            jpush                : 'cn.jiguang.sdk:jpush:3.0.5',//极光
+            jcore                : 'cn.jiguang.sdk:jcore:1.1.2',
+            wx_pay               : 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.3.4',//微信
+            qiniu                : 'com.qiniu:qiniu-android-sdk:7.3.+',//https://developer.qiniu.com/kodo/sdk/1236/android
+            weibo                : 'com.sina.weibo.sdk:core:4.1.4:openDefaultRelease@aar',//https://github.com/sinaweibosdk/weibo_android_sdk
+            bugly                : 'com.tencent.bugly:crashreport:latest.release',//https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=20180119105842
+    ]
+}

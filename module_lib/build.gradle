@@ -1,0 +1,108 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled true
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation "junit:junit:$rootProject.ext.junitVersion"
+
+    api rootProject.ext.dependencies.constraint
+    api rootProject.ext.dependencies.appcompatV7
+    api rootProject.ext.dependencies.design
+    api rootProject.ext.dependencies.supportV4
+    api rootProject.ext.dependencies.recyclerview
+
+    //网络请求
+    api rootProject.ext.dependencies.retrofit
+    api rootProject.ext.dependencies.rxandroid
+    api rootProject.ext.dependencies.gson
+
+    implementation(rootProject.ext.dependencies.converterGson) {
+        exclude group: 'com.squareup.retrofit'
+        exclude group: 'com.google.code.gson'
+    }
+    implementation(rootProject.ext.dependencies.adapterRxjava) {
+        exclude group: 'com.squareup.retrofit'
+        exclude group: 'com.squareup.okhttp3'
+        exclude group: 'io.reactivex.rxjava2'
+    }
+
+    //选择图片
+    implementation(rootProject.ext.dependencies.choosePic) {
+        exclude group: 'com.android.support'
+        exclude group: 'io.reactivex.rxjava2'
+    }
+
+    //状态栏
+    implementation(rootProject.ext.dependencies.barlibrary) {
+        exclude group: 'com.android.support'
+    }
+
+    //状态切换显示
+    implementation(rootProject.ext.dependencies.stateview) {
+        exclude group: 'com.android.support'
+    }
+
+    //日记log
+    api rootProject.ext.dependencies.logger
+
+    //基础代码
+    api(rootProject.ext.dependencies.util_code) {
+        exclude group: 'com.android.support'
+    }
+
+    //权限
+    implementation(rootProject.ext.dependencies.permission) {
+        exclude group: 'com.android.support'
+    }
+
+    //存储数据
+    implementation(rootProject.ext.dependencies.hawk) {
+        exclude group: 'com.google.code.gson'
+    }
+
+    //路由
+    api rootProject.ext.dependencies.router
+
+    //流式布局
+    api rootProject.ext.dependencies.flow
+
+    //刷新
+    api rootProject.ext.dependencies.refresh
+
+    //头像
+    api rootProject.ext.dependencies.circle_pic
+
+    //loading动画
+    implementation rootProject.ext.dependencies.loading
+
+    //轮播图
+    api rootProject.ext.dependencies.banner
+
+    //七牛
+    implementation rootProject.ext.dependencies.qiniu
+
+    //仿iOS的PickerView控件
+    api rootProject.ext.dependencies.pickerView
+}
+

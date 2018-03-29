@@ -1,0 +1,1 @@
+include ':app', ':module_lib', ':component_community', ':component_login', ':component_shop', ':component_order', ':component_personal', ':module_res'

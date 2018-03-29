@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--基本主题颜色-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--文字颜色-->
+    <color name="tv_white">#fefeff</color>
+    <color name="tv_black">#111111</color>
+
+    <!--背景颜色-->
+    <color name="bg_white">#ffffff</color>
+    <color name="bg_gray">#dbd8d1</color>
+
+
+    <!--线条颜色-->
+    <color name="line_gray">#dbd8d1</color>
+</resources>

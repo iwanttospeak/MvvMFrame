@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component_community/component_community.iml" filepath="$PROJECT_DIR$/component_community/component_community.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component_login/component_login.iml" filepath="$PROJECT_DIR$/component_login/component_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component_order/component_order.iml" filepath="$PROJECT_DIR$/component_order/component_order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component_personal/component_personal.iml" filepath="$PROJECT_DIR$/component_personal/component_personal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component_shop/component_shop.iml" filepath="$PROJECT_DIR$/component_shop/component_shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_lib/module_lib.iml" filepath="$PROJECT_DIR$/module_lib/module_lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_res/module_res.iml" filepath="$PROJECT_DIR$/module_res/module_res.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shareCiger.iml" filepath="$PROJECT_DIR$/shareCiger.iml" />
+    </modules>
+  </component>
+</project>
